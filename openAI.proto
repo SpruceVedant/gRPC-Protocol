@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package openai;
+
+service OpenAIService {
+  
+    rpc GenerateText (GenerateTextRequest) returns (GenerateTextResponse);
+}
+
+
+message GenerateTextRequest {
+    string prompt = 1;    
+    int32 max_tokens = 2;  
+}
+
+
+message GenerateTextResponse {
+    string text = 1;  
+}

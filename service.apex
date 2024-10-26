@@ -16,7 +16,7 @@ public class GrokAICallout {
         try {
             
             HttpRequest req = new HttpRequest();
-            req.setEndpoint('https://api.x.ai/v1');
+            req.setEndpoint('https://api.x.ai/v1/chat/completions');
             req.setMethod('POST');
             req.setHeader('Content-Type', 'application/json');
             req.setBody(requestBody);

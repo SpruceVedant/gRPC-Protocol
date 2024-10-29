@@ -32,7 +32,7 @@ public class GrokAICallout {
                 System.debug('Response from Grok AI: ' + responseBody);
                 
              
-                return responseBody.code; 
+                
             } else {
              
                 System.debug('Failed to get response. Status: ' + res.getStatusCode() + ', Response: ' + res.getBody());

@@ -17,7 +17,7 @@ public class OpenAIIntegrationService {
         
         
         String payload = JSON.serialize(new Map<String, Object>{
-            'model' => 'text-davinci-003',  
+            'model' => 'gpt-4o',  
             'prompt' => queryText,
             'max_tokens' => 150 
         });

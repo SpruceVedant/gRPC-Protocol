@@ -1,6 +1,6 @@
 public class OpenAIIntegrationService {
     
-    private static final String OPENAI_API_URL = 'https://openai.com/v1/chat/completions';
+    private static final String OPENAI_API_URL = 'https://openai.com/v1/completions';
     private static final String OPENAI_API_KEY = '';
 
 

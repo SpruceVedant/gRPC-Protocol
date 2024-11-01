@@ -42,8 +42,7 @@ public class OpenAIIntegrationService {
         } catch (Exception e) {
             System.debug('Error calling OpenAI API: ' + e.getMessage());
         }
-        
-        return null;
+    
     }
 
 

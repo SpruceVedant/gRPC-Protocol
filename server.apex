@@ -30,7 +30,7 @@ public class OpenAIIntegrationService {
            
             if (response.getStatusCode() == 200) {
                 Map<String, Object> responseMap = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
-                List<Object> choices = (List<Object>) responseMap.get('choices');
+                
                 if (choices != null && !choices.isEmpty()) {
                     Map<String, Object> choice = (Map<String, Object>) choices[0];
                     return (String) choice.get('text'); 

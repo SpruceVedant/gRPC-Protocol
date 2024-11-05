@@ -25,7 +25,7 @@ public class OpenAIIntegrationService {
         
         try {
            
-            HttpResponse response = http.send(request);
+
             
            
             if (response.getStatusCode() == 200) {

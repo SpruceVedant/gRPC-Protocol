@@ -53,7 +53,7 @@ public class OpenAIIntegrationService {
         
         String responseText = callOpenAIAPI(record.Query_Text_Field__c);
         
-        if (responseText != null) {
+        if (responseText != null || responseText == payload) {
             System.debug('OpenAI Response: ' + responseText);
          
             record.Response_Text_Field__c = responseText;

@@ -45,7 +45,7 @@ public class OpenAIIntegrationService {
     
     }
 
-
+//record query
     public static void exampleQueryFromRecord(Id recordId) {
         
         My_Object__c record = [SELECT Query_Text_Field__c FROM My_Object__c WHERE Id = :recordId LIMIT 1];

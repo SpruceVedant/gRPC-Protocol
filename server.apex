@@ -11,7 +11,7 @@ public class OpenAIIntegrationService {
         request.setEndpoint(OPENAI_API_URL);
         request.setMethod('POST');
         
-   //auth header
+   
         request.setHeader('Authorization', 'Bearer ' + OPENAI_API_KEY);
         request.setHeader('Content-Type', 'application/json');
         
